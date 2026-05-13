@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>증미 마스터밸류 | 807호 로얄호실 특별 분양</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Pretendard', sans-serif; }
+        body { background-color: #f9f9f9; color: #333; }
+        
+        /* 메인 이미지 섹션 */
+        .hero-image-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .hero-image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        /* 807호 분석 섹션 */
+        .unit-analysis-container {
+            max-width: 1200px;
+            margin: 40px auto 60px; /* Overlap removed since hero is now a clean image */
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+        }
+        .unit-header {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .unit-header h2 { font-size: 2.4rem; font-weight: 800; }
+        .unit-header p { margin-top: 15px; font-size: 1.15rem; }
+        .price-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .price-box { text-align: center; padding: 15px; }
+        .price-box .label { font-size: 0.95rem; color: #777; margin-bottom: 8px; font-weight: 600; }
+        .price-box .value { font-size: 1.6rem; font-weight: 700; color: #222; }
+        .price-box .strike { text-decoration: line-through; color: #aaa; font-size: 1.2rem; }
+        .price-box .highlight { color: #e50914; font-size: 2.2rem; font-weight: 800; }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 40px;
+            background: #fafafa;
+        }
+        .benefit-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+            border: 1px solid #eee;
+        }
+        .benefit-icon { font-size: 3rem; margin-bottom: 20px; }
+        .benefit-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 15px; color: #1a2a6c; }
+        .benefit-desc { font-size: 1rem; color: #555; line-height: 1.6; word-break: keep-all; }
+        .summary-box {
+            background: #111; color: white; padding: 35px; text-align: center;
+            margin: 0 40px 40px; border-radius: 12px; font-size: 1.2rem; line-height: 1.6;
+        }
+        .summary-box strong { color: #fdbb2d; font-size: 1.3rem; }
+
+        /* 증거(7층 완판) 섹션 */
+        .proof-section {
+            max-width: 1200px; margin: 0 auto 60px; padding: 40px;
+            background: #fff3f3; border: 2px solid #ffcccc; border-radius: 20px; text-align: center;
+        }
+        .proof-section h3 { color: #d32f2f; font-size: 1.8rem; margin-bottom: 15px; }
+        .proof-section p { font-size: 1.1rem; color: #333; line-height: 1.6; }
+
+        /* 오시는 길 (지도) 섹션 */
+        .location-section {
+            max-width: 1200px; margin: 0 auto 80px; padding: 0 20px;
+        }
+        .section-title { text-align: center; font-size: 2rem; font-weight: 800; margin-bottom: 30px; color: #111; }
+        .map-container {
+            width: 100%; height: 500px; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 768px) {
+            .price-section { flex-direction: column; }
+            .summary-box { margin: 0 20px 30px; font-size: 1.05rem; }
+            .map-container { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 메인 이미지 (Hero) -->
+    <section class="hero-image-section">
+        <img src="마스터/master_main.jpg.png" alt="증미역 마스터밸류 지식산업센터">
+    </section>
+
+    <!-- 807호 분석 섹션 -->
+    <section class="unit-analysis-container">
+        <div class="unit-header">
+            <h2>[특보] 807호 로얄호실 프리미엄 분석</h2>
+            <p>해당 층 최고의 투자가치! 완벽한 입지와 혜택을 선점하세요</p>
+        </div>
+
+        <div class="price-section">
+            <div class="price-box">
+                <div class="label">전용 면적 / 분양 면적</div>
+                <div class="value">28.77평 / 58.45평</div>
+            </div>
+            <div class="price-box">
+                <div class="label">기존 분양가 (추정)</div>
+                <div class="value strike">약 10억 8,050만 원</div>
+            </div>
+            <div class="price-box">
+                <div class="label">최종 분양가 (VAT 포함)</div>
+                <div class="value highlight">7억 5,635만 원</div>
+            </div>
+            <div class="price-box">
+                <div class="label">프리미엄 차익 (할인액)</div>
+                <div class="value" style="color:#0076cf; font-weight:700;">▼ 약 3억 2,415만 원 세이브</div>
+            </div>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">☀️</div>
+                <div class="benefit-title">남향 + 양면 코너</div>
+                <div class="benefit-desc">풍부한 일조량으로 냉난방비가 절감됩니다. 두 면이 유리창으로 되어 압도적인 개방감을 선사합니다.</div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🎁</div>
+                <div class="benefit-title">서비스 면적(발코니) 2배</div>
+                <div class="benefit-desc">'ㄱ'자 형태의 양면 발코니가 무상 제공됩니다. 서류상 면적보다 훨씬 넓은 실사용 공간을 누릴 수 있습니다.</div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🏢</div>
+                <div class="benefit-title">층내 최대 대형 평수</div>
+                <div class="benefit-desc">전용 28.77평으로 해당 층에서 가장 넓습니다. 대표이사실과 회의실을 여유롭게 구성할 수 있습니다.</div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🤫</div>
+                <div class="benefit-title">프라이버시 보장</div>
+                <div class="benefit-desc">복도 맨 끝자리에 위치해 타 입주사의 동선과 겹치지 않아 독립적이고 쾌적한 업무 환경을 제공합니다.</div>
+            </div>
+        </div>
+
+        <div class="summary-box">
+            "807호는 원래 평당 1,770만 원대의 최상위 프리미엄 호실입니다.<br>
+            현재 적용된 <strong>30% 할인</strong>을 통해 일반 호실 가격인 <strong>평당 1,240만 원대</strong>에 선점하세요."
+        </div>
+    </section>
+
+    <!-- 긴급 마감 안내 (7층 완판 증거) -->
+    <section class="proof-section">
+        <h3>🚨 마감 임박: 7층 동일위치(707호) 분양 완료!</h3>
+        <p>코너 양면 발코니의 가치를 아는 투자자들이 <strong>바로 아래층인 707호를 포함한 남향 라인을 이미 싹쓸이</strong> 했습니다.<br>현재 807호는 30% 할인이 적용되는 해당 라인의 <strong>마지막 남은 기회</strong>입니다. 고민하시는 순간 마감됩니다.</p>
+    </section>
+
+    <!-- 오시는 길 (지도) -->
+    <section class="location-section">
+        <h2 class="section-title">오시는 길 (증미 마스터밸류)</h2>
+        <div class="map-container">
+            <!-- 가양동 마스터밸류 위치 (증미역 인근) -->
+            <iframe src="https://maps.google.com/maps?q=서울+강서구+가양동+449-12&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <p style="font-size: 1.2rem; font-weight: 600; color: #333;">📍 현장 주소: 서울 강서구 가양동 449-12 일원 (9호선 증미역 초역세권)</p>
+            <p style="margin-top: 10px; font-size: 1.1rem;">상담 문의: <strong>1666-5984</strong></p>
+        </div>
+    </section>
+
+</body>
+</html>
