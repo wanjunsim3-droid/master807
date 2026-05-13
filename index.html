@@ -104,7 +104,34 @@
             100% { transform: scale(1); }
         }
 
+        /* 상단 상담 유도 버튼 스타일 */
+        .top-cta-container {
+            text-align: center;
+            padding: 30px 20px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 20;
+            margin-top: -40px; /* 이미지와 약간 겹치게 하여 연결감 부여 */
+        }
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e50914, #b21f1f);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 800;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(229, 9, 20, 0.4);
+            animation: pulse 2s infinite;
+            border: 3px solid white;
+        }
+
         @media (max-width: 768px) {
+            .cta-btn { font-size: 1.25rem; padding: 15px 30px; margin-top: -20px; }
             .price-section { flex-direction: column; }
             .summary-box { margin: 0 20px 30px; font-size: 1.05rem; }
             .map-container { height: 350px; }
@@ -117,6 +144,11 @@
     <section class="hero-image-section">
         <img src="마스터/master_main.jpg.png" alt="증미역 마스터밸류 지식산업센터">
     </section>
+
+    <!-- 상단 상담문의 CTA 버튼 -->
+    <div class="top-cta-container">
+        <a href="tel:1666-5984" class="cta-btn">📞 마감임박! 로얄호실 특별상담 1666-5984</a>
+    </div>
 
     <!-- 807호 분석 섹션 -->
     <section class="unit-analysis-container">
