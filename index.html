@@ -113,6 +113,10 @@
             position: relative;
             z-index: 20;
             margin-top: -40px; /* 이미지와 약간 겹치게 하여 연결감 부여 */
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
         .cta-btn {
             display: inline-flex;
@@ -129,9 +133,29 @@
             animation: pulse 2s infinite;
             border: 3px solid white;
         }
+        .homepage-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a2a6c, #0052D4);
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 800;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(26, 42, 108, 0.4);
+            border: 3px solid white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .homepage-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(26, 42, 108, 0.6);
+        }
 
         @media (max-width: 768px) {
-            .cta-btn { font-size: 1.25rem; padding: 15px 30px; margin-top: -20px; }
+            .top-cta-container { flex-direction: column; gap: 15px; margin-top: -20px; }
+            .cta-btn, .homepage-btn { font-size: 1.25rem; padding: 15px 30px; width: 100%; box-sizing: border-box; }
             .price-section { flex-direction: column; }
             .summary-box { margin: 0 20px 30px; font-size: 1.05rem; }
             .map-container { height: 350px; }
@@ -148,6 +172,7 @@
     <!-- 상단 상담문의 CTA 버튼 -->
     <div class="top-cta-container">
         <a href="tel:1666-5984" class="cta-btn">📞 마감임박! 로얄호실 특별상담 1666-5984</a>
+        <a href="http://xn--9v2b1hq8d12g9tal9dca07b69sbdv3twrib50aka.ljs.kr/" target="_blank" class="homepage-btn">🌐 마스터밸류 홈페이지 가기</a>
     </div>
 
     <!-- 807호 분석 섹션 -->
